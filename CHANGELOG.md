@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.6.0] - 2026-03-29
+
+### Added
+- **Backtesting Engine v2** (`backtest_strategy`, `compare_strategies`):
+  - 6 trading strategies: RSI, Bollinger Band, MACD, EMA Cross, **Supertrend** (🔥 trending 2025), **Donchian Channel** (Turtle Trader classic)
+  - Institutional-grade metrics: Sharpe Ratio, Calmar Ratio, Expectancy, Profit Factor, Max Drawdown
+  - Transaction cost simulation: per-trade commission + slippage
+  - Buy-and-hold benchmark comparison
+  - Single OHLCV fetch for `compare_strategies` (all 6 strategies in ~0.3s)
+- **Yahoo Finance Integration** (`yahoo_price`, `market_snapshot`):
+  - Real-time quotes for stocks, crypto, ETFs, indices (S&P500, NASDAQ, VIX), FX
+  - Global market snapshot with 14 instruments across 4 asset classes
+  - Turkish stocks supported (THYAO.IS, SASA.IS...)
+- **Webshare Rotating Proxy Manager**:
+  - 250 sticky sessions for rate-limit bypass
+  - Direct-first + proxy-fallback architecture for reliability
+  - Zero-config for users (optional env-based configuration)
+- **Technical Indicators (pure Python, zero deps)**:
+  - ATR (Average True Range)
+  - Supertrend
+  - Donchian Channel
+
+### Changed
+- `compare_strategies` now fetches OHLCV once and runs all strategies on cached data (5x faster)
+- Yahoo Finance data fetching uses direct connection first, proxy fallback only on failure
+
 ## [0.5.0] - 2026-03-29
 
 ### Added

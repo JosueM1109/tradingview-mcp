@@ -1,14 +1,14 @@
 [project]
 name = "tradingview-mcp-server"
-version = "0.5.0"
-description = "Advanced multi-agent AI trading framework and real-time market analysis MCP server"
+version = "0.6.0"
+description = "Advanced AI Trading Intelligence Framework — MCP server with backtesting, live sentiment, Yahoo Finance, and 30+ technical analysis tools"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
   { name = "Atila Ahmettaner" }
 ]
 urls = { Repository = "https://github.com/atilaahmettaner/tradingview-mcp" }
-keywords = ["mcp", "tradingview", "crypto", "technical analysis", "screener", "agents"]
+keywords = ["mcp", "tradingview", "crypto", "technical analysis", "screener", "backtesting", "sentiment", "yahoo-finance", "trading", "agents", "algorithmic-trading"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
