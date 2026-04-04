@@ -63,7 +63,7 @@ pip install tradingview-mcp-server
   "mcpServers": {
     "tradingview": {
       "command": "uvx",
-      "args": ["tradingview-mcp-server"]
+      "args": ["--from", "tradingview-mcp-server", "tradingview-mcp"]
     }
   }
 }
