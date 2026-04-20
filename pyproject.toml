@@ -14,6 +14,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
 ]
 dependencies = [
+  "fastmcp>=3.0.0",
   "feedparser>=6.0.12",
   "mcp[cli]>=1.12.0",
   "tradingview-screener>=0.6.4",

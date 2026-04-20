@@ -13,7 +13,7 @@ from __future__ import annotations
 import argparse
 import os
 
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 
 # ── Service imports ────────────────────────────────────────────────────────────
 from tradingview_mcp.core.services.coinlist import load_symbols
